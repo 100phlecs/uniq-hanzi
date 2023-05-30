@@ -18,7 +18,7 @@ function App() {
 function Results({ characters }) {
   const resultsArray = () => countCharacters(characters())
   return (
-    <div class="w-full px-3 md:px-0">
+    <div class="w-full max-w-xs md:max-w-md">
       <div class="mt-6">
         <h2 class="uppercase tracking-wider text-slate-800/80 text-xs">Unique count</h2>
         <span class="mt-3 text-5xl font-bold">{resultsArray().length}</span>
