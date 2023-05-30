@@ -36,7 +36,9 @@ function Results({ characters }) {
 function CharacterBadge({ char, count }) {
   return (
     <li class="bg-indigo-50 border-indigo-300 border mr-2 my-1 px-2 py-1 rounded-full inline-flex">
-      <span class=" pr-3 border-r border-r-indigo-200">{char}</span>
+      <span class="pr-3 leading-6 whitespace-nowrap whitespace-pre border-r border-r-indigo-200">
+        {char}
+      </span>
       <code class="pl-3">{count}</code>
     </li>
   )
